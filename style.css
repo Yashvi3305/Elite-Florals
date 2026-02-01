@@ -47,7 +47,7 @@
     background-size: cover;
     color: #ff69b4;
     height: 350px;
-    border-radius: 20px;
+    border-radius: 35px;
     clip-path: inset(0 round 25px);
     
 }
@@ -159,6 +159,8 @@ footer{
    gap: 20px; 
    margin: 25px;
    color: #4b0082;
+   padding-left: 50px;
+   padding-right: 50px;
 }
 .Team-Member{
     border: 2px solid #ddd;
@@ -176,9 +178,12 @@ footer{
 }
 .Team-Member img{
     border-radius: 8px;
-    justify-content: left;
-    margin-left:75px ;
-   
+    /*justify-content: left;
+    margin-left:75px ;*/
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: cover;
 }
 .Team-Member:hover{
     box-shadow: 0 0 15px #ff69b4;
@@ -191,7 +196,12 @@ footer{
 @media (max-width: 576px) {
   .Team-Grid {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
+  .About h2{
+    margin: 20px;
+  }
+  
 }
 .Contact h2{
     color: #ff69b4;
@@ -240,4 +250,11 @@ footer{
     width: 260px;
     padding: 10px;
     border-width: 2px;
+}
+.Contact-Form input,textarea{
+    transition: border-color 0.3s ease;
+}
+.Contact-Form input:focus ,textarea:focus{
+    border-color: #a4133c;
+    
 }
